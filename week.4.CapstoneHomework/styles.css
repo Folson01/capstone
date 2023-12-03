@@ -1,0 +1,26 @@
+* {
+background-image: url("capstone/week.4.CapstoneHomework/images/spl.jpg");
+    background-size: cover;
+    background-color: rgb(146, 88, 157);
+    
+    ;
+}
+p {
+    background-color:rgb(255, 101, 66);
+    padding: 20px;
+    margin: 12px;
+    border: 5px solid;
+    font-size: 30px;
+}
+h1 {
+    padding: 35PX;
+}
+li {
+    border: 2px solid;
+    padding: 15px;
+    background-color:rgb(146, 88, 157);
+    transition: background-color 0.5s;
+    }
+    li:hover {
+    background-color:rgb(255, 101, 66);
+    }
