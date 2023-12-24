@@ -1,5 +1,7 @@
 import html from "html-literal";
-export default () => html`<h1>
+export default () => html`
+
+<h1>
   Feel Free to Contact us with any questions you may have about our site or if you
   have any tips that can make this process easier!
   </h1>

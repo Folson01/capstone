@@ -1,4 +1,4 @@
 export default {
-  header: "My Aboutus page",
+  header: "About Us",
   view: "Aboutus"
 };

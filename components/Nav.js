@@ -1,6 +1,6 @@
 import html from "html-literal";
 export default links => html`
-  <nav>
+  <nav class="nav">
     <i class="Nav"></i>
     <ul class="Nav">
       ${links
@@ -12,3 +12,4 @@ export default links => html`
     </ul>
   </nav>
 `;
+

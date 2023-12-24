@@ -2,7 +2,7 @@ import html from "html-literal";
 export default () => html`
 <form action="https://formspree.io/f/mayrwwdv" method="POST">
     <label for="PetName">PetName:</label>
-    <input type="text" name="name" id="name" placeholder="Full Name" required />
+    <input type="text" name="name" id="name" placeholder="Pets Name" required />
 
     <label for="email">Email:</label>
     <input
@@ -18,7 +18,6 @@ export default () => html`
     <div>
       <label for="msg">Enter your message:</label>
       <textarea name="msg" id="msg" cols="40" rows="20"></textarea>
-      <input type="submit" value="submit" />
       <fieldset>
         <legend>Is your pet approachable?:</legend>
 
@@ -30,6 +29,7 @@ export default () => html`
         <div>
           <input type="radio" id="approachable" name="pet" />
           <label for="Be safe">Approach with caution</label>
+          <input type="submit" value="submit" />
         </div>
     </div>
 `;

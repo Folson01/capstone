@@ -1,4 +1,5 @@
 export default {
-  header: "My Home Page",
-  view: "Home"
+  header: "Welcome to Spotted",
+  view: "Home",
+  weather: {}
 };

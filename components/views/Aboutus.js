@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default () => html`
-  <p>
+  <p class="about">
     Welcome to Spotted, where we help families locate their lost loved ones. We
     understand that sometimes pets can get a little lost. Our mission is to make
     locating them as stress free as possible. Here on our website we alow users

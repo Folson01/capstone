@@ -1,4 +1,4 @@
 export default {
-  header: "My Lostpet Page",
+  header: "Tell us about your lost one",
   view: "Lostpet"
 };
