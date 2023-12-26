@@ -39,7 +39,6 @@ router.hooks({
         ? capitalize(params.data.view)
         : "Home";
 
-    // Add a switch case statement to handle multiple routes
     switch (view) {
       case "Home":
         axios
