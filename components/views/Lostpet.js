@@ -1,6 +1,6 @@
 import html from "html-literal";
 export default () => html`
-<form action="https://formspree.io/f/mayrwwdv" method="POST">
+<form action="" method="POST">
     <label for="PetName">PetName:</label>
     <input type="text" name="name" id="name" placeholder="Pets Name" required />
 
