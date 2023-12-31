@@ -1,7 +1,9 @@
 import html from "html-literal";
+import Puppy from "../../assest/puppy.jpg";
 export default state => html`
+  <img src=${Puppy} alt"dog" class=dog />
   <div class="homePage">
-    <p>
+    <p class="Home">
       Here at spotted we understand that sometimes pets lose their way. Our goal
       is to reunite families with their lost loved one. please take your time
       and give us as much information as possible about your lost one. Were here
