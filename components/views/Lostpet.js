@@ -24,9 +24,6 @@ export default () => html`
         <div>
           <input type="radio" id="keep away" name="pet" value="Keep away" />
           <label for="keep away">Keep away</label>
-        </div>
-
-        <div>
           <input type="radio" id="approachable" name="pet" />
           <label for="Be safe">Approach with caution</label>
           <input type="submit" value="submit" />

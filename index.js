@@ -22,11 +22,14 @@ function afterrender(state) {
   if (state.view === "Lostpet") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
-
       console.log(event.target.elements);
-
-      store.Lostpet.pet.push();
-
+      store.Lostpet.pet.push({
+        PetName: event.target.element.PetName.value,
+        email: event.target.element.email.value,
+        fone: event.target.element.fone.value,
+        msg: event.target.element.msg.value,
+        radio: []
+      });
       router.navigate("/Pets");
     });
   }
