@@ -1,6 +1,7 @@
 import html from "html-literal";
-
+import animals from "../../assest/sleepingpets.jpg";
 export default () => html`
+  <img src=${animals} alt"sleeping" class=animals />
   <p class="about">
     Welcome to Spotted, where we help families locate their lost loved ones. We
     understand that sometimes pets can get a little lost. Our mission is to make
