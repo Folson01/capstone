@@ -75,7 +75,7 @@ footer {
   font-size: 16px;
 }
 .homePage {
-  background-color: rgba(255, 255, 255, .30);
+  background-color: rgba(255, 255, 255, .55);
 }
 .pets {
   background-color: rgba(255, 255, 255, .30);
@@ -84,22 +84,16 @@ footer {
   background-color: rgba(255, 255, 255, .30);
 margin-top: 200px;
 }
-.Home {
-  position: absolute;
-  top: 40%;
-  background-color: rgba(255, 255, 255, .30);
-}
+
 .about {
-  position: absolute;
   top: 40%;
-  background-color: rgba(255, 255, 255, .30);
+  background-color: rgba(255, 255, 255, .60);
 }
 h3 {
+  position: absolute;
   background-color: rgba(255, 255, 255, .30);
 }
-p h3 {
-  background-color: rgba(255, 255, 255, .30);
-}
+
 .contact {
   background-color: rgba(255, 255, 255, .30);
 margin-top: 300px;
@@ -127,4 +121,13 @@ margin-top: 300px;
   margin-right: auto;
   width: 90%;
   height: 100%;
+}
+
+@media (max-width: 500px) {
+  .home {
+    font-size: 1.5rem;
+  }
+h3 {
+  font-size: 1.5rem;
+}
 }
