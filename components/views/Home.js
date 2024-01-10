@@ -1,7 +1,7 @@
 import html from "html-literal";
-import Puppy from "../../assest/puppy.jpg";
+import Puppy from "../../assest/whiskey.jpg";
 export default state => html`
-  <img src=${Puppy} alt"dog" class=dog />
+  <img src=${Puppy} class ="dog"alt"dog" class=dog />
   <div class="homePage">
     <p class="Home">
       Here at spotted we understand that sometimes pets lose their way. Our goal

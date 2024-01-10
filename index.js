@@ -17,20 +17,37 @@ function render(state = store.Home) {
   router.updatePageLinks();
   afterrender(state);
 }
-
 function afterrender(state) {
   if (state.view === "Lostpet") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
-      console.log(event.target.elements);
-      store.Lostpet.pet.push({
-        PetName: event.target.element.PetName.value,
-        email: event.target.element.email.value,
-        fone: event.target.element.fone.value,
-        msg: event.target.element.msg.value,
-        radio: []
-      });
-      router.navigate("/Pets");
+      const inputs = event.target.elements;
+      console.log("Input Element List", inputs);
+      const Approachable = [];
+      for (let input of inputs.Approachable) {
+        if (input.checked) {
+          Approachable.push(input.value);
+        }
+      }
+      console.log(Approachable);
+      const requestData = {
+        PetName: inputs.PetName.value,
+        Email: inputs.Email.value,
+        Phone: inputs.Phone.value,
+        msg: inputs.msg.value,
+        Approachable: Approachable[0]
+      };
+      console.log("request Body", requestData);
+
+      axios
+        .post(`${process.env.LOST_PET_URL}/Pets`, requestData)
+        .then(response => {
+          store.Pets.pets.push(response.data);
+          router.navigate("/Pets");
+        })
+        .catch(error => {
+          console.log("Did not spot pet", error);
+        });
     });
   }
 }
