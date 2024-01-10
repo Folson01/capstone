@@ -3,32 +3,29 @@ export default state => html`;
 
 <form action="" method="POST">
     <label>PetName:</label>
-    <input type="text" id="name" placeholder="Pets Name" required />
+    <input type="text" name="PetName" placeholder="Pets Name" required />
 
-    <label for="email">Email:</label>
-    <input
-      type="email"
-      name="email"
-      id="email"
+    <label for="Email" >Email:</label>
+    <input name="Email"
       placeholder="Example@place.com"
     />
 
-    <label>Phone:</label>
-    <input id="Cellp+Phone" placeholder="999-999-9991" />
+    <label for = "Phone" >Phone:</label>
+    <input name="Phone" placeholder="999-999-9991" />
 
     <div>
-      <label>Tell us about your lost one:</label>
-      <textarea id="msg" cols="40" rows="20"></textarea>
+      <label  for="msg">Tell us about your lost one:</label>
+      <textarea name="msg" id="msg" cols="40" rows="20"></textarea>
       <fieldset>
         <legend>Is your pet approachable?:</legend>
 
         <div>
-          <input type="radio" eid="keep away"value="Keep away" />
-          <label>Keep away</label>
-          <input type="radio" id="approachable" name="pet" />
-          <label for="Be safe">Approach with caution</label>
-          <input type="submit" value="submit" />
+          <input type="radio"  name="Approachable"value="Keep away" />
+          <label for="Keep away">Keep away</label>
+          <input type="radio" id="Approachable" name="Approachable" value="Approachable"/>
+          <label for="Approachable">Approach with caution</label>
         </div>
     </div>
-
+    <input name="submit" type="submit" value="submit" />
+</form>
 `;
