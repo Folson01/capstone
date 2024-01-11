@@ -16,8 +16,7 @@ const petsSchema = new mongoose.Schema({
   },
   msg: {
     type: String,
-    required: true,
-    validate: /^[A-Za-z0-9 ]*$/
+    required: true
   },
   Approachable: [String],
   order: { type: mongoose.Schema.Types.ObjectId, ref: "lostPet" }
