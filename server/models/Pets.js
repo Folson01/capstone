@@ -12,7 +12,7 @@ const petsSchema = new mongoose.Schema({
   },
   Phone: {
     type: String,
-    validate: /^[A-Za-z0-9 ]*$/
+    validate: /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/
   },
   msg: {
     type: String,
