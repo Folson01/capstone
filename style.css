@@ -122,6 +122,16 @@ margin-top: 300px;
   width: 90%;
   height: 100%;
 }
+#Lostpets  {
+border: 2px solid;
+table-layout: auto;
+width: 100%;
+text-align: center;
+  background-color: rgba(255, 255, 255, .60);
+}
+tr,td {
+align-items: inherit;
+}
 
 @media (max-width: 500px) {
   .home {
