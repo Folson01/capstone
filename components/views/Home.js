@@ -12,8 +12,11 @@ export default state => html`
     </p>
   </div>
   <h3>
-    The weather in ${state.weather.city} is ${state.weather.description}.
-    Temperature is ${state.weather.temp}F, and it feels like
-    ${state.weather.feelsLike}F.
+    Ohh NO! your loved one is out in the world alone. lets take a look at the
+    current weather and make sure its safe to go out and search.
+    ${state.weather.city} is ${state.weather.description}. Temperature is
+    ${state.weather.temp}F, and it feels like ${state.weather.feelsLike}F. The
+    current humidity is ${state.weather.humidity}%. Dress for the occasion if
+    you plan to go searching.
   </h3>
 `;

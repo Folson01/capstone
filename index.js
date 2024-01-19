@@ -73,7 +73,8 @@ router.hooks({
               city: response.data.name,
               temp: kelvinToFahrenheit(response.data.main.temp),
               feelsLike: kelvinToFahrenheit(response.data.main.feels_like),
-              description: response.data.weather[0].main
+              description: response.data.weather[0].main,
+              humidity: response.data.main.humidity
             };
             done();
           })
